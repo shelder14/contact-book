@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'Gotham Pro Regular';
+	src: url('fonts/GothamPro/GothamPro.eot');
+	src: url('fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
+	url('fonts/GothamPro/GothamPro.woff') format('woff'),
+	url('fonts/GothamPro/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+}
+.container {
+  max-width: 840px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  text-align: center;
+  
+}
+.add-contact__btn {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+  background-color: #ff4081;
+  border: none;
+  color: #fff;
+
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  outline: none;
+  padding: 10px 28px;
+  cursor: pointer;
+}
+
+.add-contact__btn:hover {
+  background-color: #ff5a92;
+}
+.add-contact__input {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #767676;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.add-contact__input:focus {
+  box-shadow: none;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border: 1px solid; 
+  align-items: center;
+}
+.contact__link {
+  color: #ff4081;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.contact__link:hover {
+  border: none;
+}
+.contact__delete {
+  font-size: 16px;
+  font-family: "Gotham Pro Regular";
+  background-color: #ff4081;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  outline: none;
+  padding: 7px 20px;
+  cursor: pointer;
+} 
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.form-field__input {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #767676;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+.form-field__btn {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+  background-color: #ff4081;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  outline: none;
+  padding: 10px 28px;
+  cursor: pointer;
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+  }
+.field__name, .field__value {
+  width: 300px;
+}
+.field__btns {
+  width: 140px;
+  text-align: center;
+}
+.field__edit, .field__cancel, .field__delete, .field__confim, .field__stepback{
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.field__input {
+  font-size: 18px;
+  font-family: "Gotham Pro Regular";
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.14), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #767676;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+@media (max-width: 480px){
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  .contact__link {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .contact__name {
+    margin-bottom: 15px;
+    display: block;
+  }
+  .contact__delete {
+    display: block;
+    margin: auto;
+  }
+  .form-field {
+    flex-direction: column;
+    
+  }
+  .form-field__input {
+    margin-bottom: 15px;
+  }
+}
